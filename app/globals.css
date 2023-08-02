@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 16px;
+}
+
+.header-text {
+  width: 85vw;
+  margin: 7rem auto 1rem auto;
+}
+
+.content-img {
+  position: relative;
+}
+
+.content-img::before {
+  content: 'Creating a global community of mindful individuals';
+  position: absolute;
+  font-size: 4vw;
+  width: 50%;
+  font-weight: bolder;
+  margin: 1rem 2rem;
+}
+
+.content-img::after {
+  content: '';
+  position: absolute;
+  background-image: url('../assets//crown.svg');
+  background-size: cover;
+  width: 5vw;
+  height: 5vw;
+  top: -5vw;
+  right: -5vw;
+
+}
+
+.header-cards {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.card {
+  margin: 5rem 0;
+}
+
+.card-img {
+  width: 30vw;
+  position: relative;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.10127801120448177) 0%, rgba(85, 85, 85, 1) 100%);
+  opacity: .3;
+  z-index: 1;
+  border-radius: 65px;
+}
+
+.card-content {
+  top: 85%;
+  left: 10%;
+  color: white;
+  z-index: 1;
+}
+
+
+/* IMAGES GRID SECTION  */
+.headings ul {
+  list-style-image: url('../assets/list-style-img.svg');
+  list-style-position: outside;
+  padding: 2rem 5rem;
+}
+
+.headings ul li span {
+  color: #7378DE;
+}
+
+.scroll-img {
+  width: 10vh;
+}
+
+.right span {
+  color: #A2E080;
+}
+
+.relaxing-body,
+.professional-body {
+  margin: 3rem 0;
+  height: 60vh;
+}
+
+.left {
+  width: 40vw;
+  left: 30px;
+  bottom: -40px;
+}
+
+.image-section{
+  width: 35vw;
+  top: 6vw;
+  right: 30px;
+}
+
+.professional-text{
+  color: #7378DE;
+}
+
+.professional-text span{
+  color: #0F1141;
+}
+
+.about-para span{
+  color: #A2E080;
+}
+
+.mobile-app{
+  background-image: url('../assets/mobile-bg.svg');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .relaxing-body {
+    height: 45vh;
+  }
+
+  .left {
+    width: 40vw;
+    left: 60px;
+    bottom: -20px;
+  }
+
+  .image-section{
+    width: 50vw;
+    top: 6vw;
+    right: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content-img::before {
+    margin: .5rem 1rem;
+  }
+}
