@@ -14,6 +14,7 @@ import GridImg6 from '../assets/grid-img-6.svg'
 import GridImg7 from '../assets/grid-img-7.svg'
 import GridImg8 from '../assets/grid-img-8.svg'
 import GridImg9 from '../assets/grid-img-9.svg'
+import GridImg10 from '../assets/grid-img-10.svg'
 import ScrollDown from '../assets/scroll-down.svg'
 import RelaxingBody from '../assets/relaxing-body.svg'
 import Professional from '../assets/professional.svg'
@@ -61,7 +62,7 @@ const page = () => {
             </ul>
             <Image src={ScrollDown} alt='scroll down' className='scroll-img py-12 mx-auto'></Image>
           </div>
-          <div className="grid grid-cols-3 gap-3">
+          <div className=" hidden md:grid grid-cols-3 gap-3">
             <div></div>
             <div></div>
             <Image src={GridImg1} alt='image-1'></Image>
@@ -75,6 +76,25 @@ const page = () => {
             <Image src={GridImg8} alt='image8'></Image>
             <Image src={GridImg9} alt='image-9'></Image>
           </div>
+          <div className="flex md:hidden justify-center items-center gap-5">
+            <div className="grid grid-flow-col grid-cols-1 grid-rows-3 gap-3">
+              <Image src={GridImg1} alt='image-1' className='mob-grid-img'></Image>
+              <Image src={GridImg2} alt='image-2' className='mob-grid-img'></Image>
+              <Image src={GridImg3} alt='image-3' className='mob-grid-img'></Image>
+            </div>
+            <div className="grid grid-flow-col grid-cols-1 grid-rows-4 gap-3">
+              <Image src={GridImg4} alt='image-1' className='mob-grid-img'></Image>
+              <Image src={GridImg5} alt='image-2' className='mob-grid-img'></Image>
+              <Image src={GridImg6} alt='image-3' className='mob-grid-img'></Image>
+              <Image src={GridImg7} alt='image-3' className='mob-grid-img'></Image>
+            </div>
+            <div className="grid grid-flow-col grid-cols-1 grid-rows-3 gap-3">
+              <Image src={GridImg8} alt='image-1' className='mob-grid-img'></Image>
+              <Image src={GridImg9} alt='image-2' className='mob-grid-img'></Image>
+              <Image src={GridImg10} alt='image-2' className='mob-grid-img'></Image>
+            </div>
+          </div>
+
         </section>
 
         <section className='relaxing-body p-11 text-center flex flex-col relative justify-start items-center md:justify-end bg-[#0F1141] md:items-end md:flex-row'>
@@ -92,7 +112,7 @@ const page = () => {
         <section className="mobile-app">
           <h2 className='text-3xl md:text-5xl text-center font-bold text-white w-3/4 m-auto py-10'>Mobile App coming soon!</h2>
         </section>
-        <Footer/>
+        <Footer />
       </main>
     </>
   )
