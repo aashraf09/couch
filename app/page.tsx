@@ -18,6 +18,7 @@ import ScrollDown from '../assets/scroll-down.svg'
 import RelaxingBody from '../assets/relaxing-body.svg'
 import Professional from '../assets/professional.svg'
 import About from '@/components/About'
+import Footer from '@/components/Footer'
 
 
 const page = () => {
@@ -91,6 +92,7 @@ const page = () => {
         <section className="mobile-app">
           <h2 className='text-3xl md:text-5xl text-center font-bold text-white w-3/4 m-auto py-10'>Mobile App coming soon!</h2>
         </section>
+        <Footer/>
       </main>
     </>
   )
