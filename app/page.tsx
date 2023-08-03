@@ -35,7 +35,6 @@ const page = () => {
               <Image src={headerBG} alt=''></Image>
             </div>
           </div>
-
           {/* header cards section */}
 
           <div className="header-cards grid grid-cols-3 gap-2.5 ">
@@ -103,11 +102,11 @@ const page = () => {
           <div className="left m-auto mt-10 order-last md:absolute md:order-first">
             <Image src={RelaxingBody} className='relaxing-body-img' alt='relaxing body'></Image>
           </div>
-          <div className="right text-4xl md:text-6xl xl:text-9xl md:w-3/5 font-bold text-white order-first md:order-last"><span>Therapy</span> at your own <span>convenience</span></div>
+          <div className="right text-4xl md:text-6xl xl:text-8xl md:w-3/5 font-bold text-white order-first md:order-last"><span>Therapy</span> at your own <span>convenience</span></div>
         </section>
 
         <section className='professional-body md:pt-11 text-center flex flex-col relative justify-center items-end md:justify-start bg-white md:items-center md:flex-row'>
-          <div className="professional-text text-xl md:text-5xl xl:text-8xl font-bold md:w-1/2 py-10"><h2>Choose professionals <span>according to your</span> preferences & needs</h2></div>
+          <div className="professional-text text-xl md:text-5xl xl:text-7xl font-bold md:w-1/2 py-10"><h2>Choose professionals <span>according to your</span> preferences & needs</h2></div>
           <div className="image-section md:absolute m-auto pt-2 md:pt-0"><Image src={Professional} alt='choose professional according to your choise'></Image></div>
         </section>
         <About />
