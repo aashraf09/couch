@@ -24,6 +24,7 @@ html {
   width: 50%;
   font-weight: bolder;
   margin: 1rem 2rem;
+  color:#0F1141;
 }
 
 .content-img::after {
@@ -172,6 +173,10 @@ html {
   .relaxing-body,
   .professional-body {
     padding: 3rem 1rem;
-    height: 50vh;
+    height: 35vh;
+  }
+
+  .relaxing-body{
+    height: 70vw;
   }
 }
