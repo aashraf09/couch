@@ -13,6 +13,8 @@ html {
 
 .content-img {
   position: relative;
+  width:fit-content;
+  /* height: fit-content; */
 }
 
 .content-img::before {
@@ -50,22 +52,8 @@ html {
   position: relative;
 }
 
-.card::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.10127801120448177) 0%, rgba(85, 85, 85, 1) 100%);
-  opacity: .3;
-  z-index: 1;
-  border-radius: 65px;
-}
-
 .card-content {
-  top: 85%;
+  top: 80%;
   left: 10%;
   color: white;
   z-index: 1;
@@ -93,8 +81,8 @@ html {
 
 .relaxing-body,
 .professional-body {
-  margin: 3rem 0;
-  height: 60vh;
+  padding: 3rem 1rem;
+  height: 55vh;
 }
 
 .left {
@@ -122,11 +110,9 @@ html {
 }
 
 .mobile-app {
-  background-image: url('../assets/mobile-bg.svg');
-  background-size: cover;
-  background-position: center;
+  background-image: url('../assets/mobile-app-bg.svg');
   background-repeat: no-repeat;
-  height: 70vh;
+  background-size: cover;
 }
 
 .divider {
@@ -141,13 +127,28 @@ html {
   width: 30vw;
 }
 
-
+@media only screen and (min-width: 1650px) {
+  .content-img::before {
+    font-size: 3.5vw;
+  }
+}
 
 
 @media only screen and (max-width: 768px) {
-  .relaxing-body {
-    height: 45vh;
+  .header-text {
+    width: 85vw;
+    margin: 3rem auto 1rem auto;
   }
+
+  .card {
+    margin: 2rem 0;
+  }
+
+  .relaxing-body,
+.professional-body {
+  padding: 3rem 0;
+  height: 50vh;
+}
 
   .left {
     width: 40vw;
@@ -165,5 +166,11 @@ html {
 @media only screen and (max-width: 600px) {
   .content-img::before {
     margin: .5rem 1rem;
+  }
+
+  .relaxing-body,
+  .professional-body {
+    padding: 3rem 1rem;
+    height: 50vh;
   }
 }

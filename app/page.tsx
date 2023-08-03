@@ -18,6 +18,7 @@ import GridImg10 from '../assets/grid-img-10.svg'
 import ScrollDown from '../assets/scroll-down.svg'
 import RelaxingBody from '../assets/relaxing-body.svg'
 import Professional from '../assets/professional.svg'
+import mobile from '../assets/mobile.svg'
 import About from '@/components/About'
 import Footer from '@/components/Footer'
 
@@ -28,8 +29,8 @@ const page = () => {
       <main>
         <section className="header bg-[#0F1141]">
           <TopBar />
-          <div className="header-text mt-10 relative">
-            <div className="content-img">
+          <div className="header-text">
+            <div className="content-img m-auto">
               <Image src={headerBG} alt=''></Image>
             </div>
           </div>
@@ -39,15 +40,15 @@ const page = () => {
           <div className="header-cards grid grid-cols-3 gap-2.5 ">
             <div className="card relative">
               <Image className='card-img' src={CardImg_1} alt='card-img'></Image>
-              <p className="card-content text-base font-bold hidden md:block absolute">Teletheraphy</p>
+              <p className="card-content text-2xl font-bold hidden md:block absolute xl:text-4xl">Teletheraphy</p>
             </div>
             <div className="card relative">
               <Image className='card-img' src={CardImg_2} alt='card-img'></Image>
-              <p className="card-content text-lg font-bold hidden md:block absolute">Wellness store</p>
+              <p className="card-content text-2xl font-bold hidden md:block absolute xl:text-4xl">Wellness store</p>
             </div>
             <div className="card relative">
               <Image className='card-img' src={CardImg_3} alt='card-img'></Image>
-              <p className="card-content text-base font-bold hidden md:block absolute">Community</p>
+              <p className="card-content text-2xl font-bold hidden md:block absolute xl:text-4xl">Community</p>
             </div>
           </div>
         </section>
@@ -62,7 +63,7 @@ const page = () => {
             </ul>
             <Image src={ScrollDown} alt='scroll down' className='scroll-img py-12 mx-auto'></Image>
           </div>
-          <div className=" hidden md:grid grid-cols-3 gap-3">
+          <div className=" hidden md:grid grid-cols-3 gap-3 h-min items-center place-items-center m-auto">
             <div></div>
             <div></div>
             <Image src={GridImg1} alt='image-1'></Image>
@@ -97,20 +98,21 @@ const page = () => {
 
         </section>
 
-        <section className='relaxing-body p-11 text-center flex flex-col relative justify-start items-center md:justify-end bg-[#0F1141] md:items-end md:flex-row'>
-          <div className="left order-last absolute md:order-first">
+        <section className='relaxing-body p-11 text-center flex flex-col md:relative justify-start items-end md:justify-end bg-[#0F1141] md:items-end md:flex-row'>
+          <div className="left m-auto mt-10 order-last md:absolute md:order-first">
             <Image src={RelaxingBody} className='relaxing-body-img' alt='relaxing body'></Image>
           </div>
-          <div className="right text-4xl md:text-6xl md:w-1/2 p-4 md:p-11 font-bold text-white order-first md:order-last"><span>Therapy</span> at your own <span>convenience</span></div>
+          <div className="right text-4xl md:text-6xl md:w-1/2 font-bold text-white order-first md:order-last"><span>Therapy</span> at your own <span>convenience</span></div>
         </section>
 
-        <section className='professional-body p-8 md:p-11 text-center flex flex-col relative justify-start items-center md:justify-start bg-white md:items-start md:flex-row'>
-          <div className="professional-text text-xl md:text-6xl w-1/2 font-bold"><h2>Choose professionals <span>according to your</span> preferences & needs</h2></div>
-          <div className="image-section md:absolute m-auto"><Image src={Professional} alt='choose professional according to your choise'></Image></div>
+        <section className='professional-body md:pt-11 text-center flex flex-col relative justify-center items-end md:justify-start bg-white md:items-center md:flex-row'>
+          <div className="professional-text text-xl md:text-5xl font-bold md:w-1/2 py-10"><h2>Choose professionals <span>according to your</span> preferences & needs</h2></div>
+          <div className="image-section md:absolute m-auto pt-2 md:pt-0"><Image src={Professional} alt='choose professional according to your choise'></Image></div>
         </section>
         <About />
         <section className="mobile-app">
-          <h2 className='text-3xl md:text-5xl text-center font-bold text-white w-3/4 m-auto py-10'>Mobile App coming soon!</h2>
+          <h2 className='text-3xl md:text-5xl text-center font-bold text-white w-3/4 py-10 m-auto'>Mobile App coming soon!</h2>
+          <Image src={mobile} alt='mobile-bg' className='mobile-app-bg m-auto'></Image>
         </section>
         <Footer />
       </main>
