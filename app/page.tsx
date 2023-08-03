@@ -2,6 +2,7 @@ import TopBar from '@/components/TopBar'
 import React from 'react'
 import Image from 'next/image'
 import headerBG from '../assets/header-bg.svg'
+import star from '../assets/list-style-img.svg'
 import CardImg_1 from '../assets/header-card-1.svg'
 import CardImg_2 from '../assets/header-card-2.svg'
 import CardImg_3 from '../assets/header-card-3.svg'
@@ -55,11 +56,11 @@ const page = () => {
         <section className="grid-section px-3 md:px-10 mt-10 flex flex-col justify-between  md:flex-row">
           <div className="headings text-center md:text-left">
             <h2 className='font-bold text-3xl leading-10 p-1 md:p-4 md:text-6xl'>Discover a healthier, happier you</h2>
-            <ul className=' p-1 md:p-4 px-16 mt-4 text-xl md:text-3xl'>
-              <li className='p-0 md:p-2'>Life transforming therapy & coaching <span>sessions</span></li>
-              <li className='p-0 md:p-2'>Explore our range of welllness <span>items</span></li>
-              <li className='p-0 md:p-2'>Join a judgment free <span>community</span></li>
-              <li className='p-0 md:p-2'>Elevate your <span>body, mind & soul</span></li>
+            <ul className='md:p-4 px-16 mt-4 text-xl md:text-3xl'>
+              <li className='py-2 md:p-2 flex items-start text-center md:text-left justify-start gap-5'><Image src={star} className='hidden md:block' alt='star'></Image><p>Life transforming therapy & coaching <span>sessions</span></p></li>
+              <li className='py-2 text-center md:text-left md:p-2 flex items-start justify-start gap-5'><Image src={star} className='hidden md:block' alt='star'></Image><p>Explore our range of wellness <span>items</span></p></li>
+              <li className='py-2 md:p-2 flex items-start justify-start gap-5'><Image src={star} className='hidden md:block' alt='star'></Image><p>Join a judgment free <span> community</span></p></li>
+              <li className='py-2 md:p-2 flex items-start gap-5'><Image src={star} className='hidden md:block' alt='star'></Image><p>Elevate your <span> body, mind & soul</span></p></li>
             </ul>
             <Image src={ScrollDown} alt='scroll down' className='scroll-img py-12 mx-auto'></Image>
           </div>

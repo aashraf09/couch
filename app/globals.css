@@ -14,7 +14,6 @@ html {
 .content-img {
   position: relative;
   width:fit-content;
-  /* height: fit-content; */
 }
 
 .content-img::before {
@@ -62,9 +61,7 @@ html {
 
 /* IMAGES GRID SECTION  */
 .headings ul {
-  list-style-image: url('../assets/list-style-img.svg');
-  list-style-position: outside;
-  padding: 2rem 5rem;
+  padding: 2rem 1rem;
 }
 
 .headings ul li span {
