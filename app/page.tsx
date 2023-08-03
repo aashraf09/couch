@@ -99,7 +99,7 @@ const page = () => {
 
         </section>
 
-        <section className='relaxing-body p-11 text-center flex flex-col md:relative justify-start items-end md:justify-end bg-[#0F1141] md:items-end md:flex-row'>
+        <section className='relaxing-body p-11 text-center flex flex-col md:relative justify-start items-end md:justify-end bg-[#0F1141] md:items-end md:flex-row md:z-40'>
           <div className="left m-auto mt-10 order-last md:absolute md:order-first">
             <Image src={RelaxingBody} className='relaxing-body-img' alt='relaxing body'></Image>
           </div>

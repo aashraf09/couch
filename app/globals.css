@@ -14,6 +14,7 @@ html {
 .content-img {
   position: relative;
   width:fit-content;
+  max-width: 100%;
 }
 
 .content-img::before {
@@ -107,9 +108,11 @@ html {
 }
 
 .mobile-app {
+  width:100vw;
   background-image: url('../assets/mobile-app-bg.svg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .divider {
@@ -124,17 +127,18 @@ html {
   width: 30vw;
 }
 
-@media only screen and (min-width: 1650px) {
+@media only screen and (min-width: 1540px) {
   .content-img::before {
     font-size: 3.5vw;
   }
+  
 }
 
 
 @media only screen and (max-width: 768px) {
   .header-text {
     width: 85vw;
-    margin: 3rem auto 1rem auto;
+    margin: 2rem auto 1rem auto;
   }
 
   .card {
